@@ -21,9 +21,9 @@ public:
                         return false;
 
         }
-        if(p->right ==NULL && q->right == NULL && p->left ==NULL && q->left == NULL && p->val == q->val){
-            return true;
-        }
+        // if(p->right ==NULL && q->right == NULL && p->left ==NULL && q->left == NULL && p->val == q->val){
+        //     return true;
+        // }
 bool a= isSameTree(p->right, q->right);
 bool b= isSameTree(p->left, q->left);
 
