@@ -20,8 +20,11 @@ return dp[i][j]=uniquePathsHelper(m, n, i+1, j, dp) + uniquePathsHelper(m,n,i, j
     int uniquePaths(int m, int n) {
               vector<vector<int>> dp(m+1,vector<int>(n+1,-1));
  int num=uniquePathsHelper(m, n, 0, 0, dp);
-        if(m==1&&n==1)
-            return num;
-        return dp[0][0];
+ cout<<num<<endl;
+ cout<<dp[0][0];
+        // if(m==1&&n==1)
+        //     return num;
+        // return dp[0][0];
+        return num;
     }
 };
